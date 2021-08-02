@@ -2,6 +2,7 @@
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Installation](#installation)
+- [Example](#example)
 # Introduction
 
 This is my take on [grep](https://man7.org/linux/man-pages/man1/grep.1.html).
@@ -25,3 +26,7 @@ $ cargo install --path .
 ```sh
 $ bad-grep "your query" "relative/full path to file"
 ```
+
+# Example
+
+![example](./documentation/bad-grep-example.png)
