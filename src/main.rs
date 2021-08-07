@@ -18,7 +18,7 @@ struct QueryResult {
     line: String,
 }
 
-fn parse_args(args: &[String]) -> (&String, &String) {
+fn parse_args(args: &[String]) -> (&str, &str) {
     if args.len() >= 3 {
         (&args[1], &args[2])
     } else {
@@ -26,7 +26,7 @@ fn parse_args(args: &[String]) -> (&String, &String) {
     }
 }
 
-fn query_file(query: &String, filename: &String) -> Vec<QueryResult> {
+fn query_file(query: &str, filename: &str) -> Vec<QueryResult> {
     let mut result: Vec<QueryResult> = Vec::new();
     if let Ok(lines) = read_lines(filename) {
         for (line_number, line) in lines.enumerate() {
