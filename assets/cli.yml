@@ -1,0 +1,19 @@
+name: bad-grep
+version: "0.1.1"
+author: S-Mann
+about: Adds file line hyperlinks to grep style searches, hyperlinks can be viewed in vscode
+args:
+  - query:
+      short: q
+      long: query
+      multiple: false
+      required: true
+      help: Your search query
+      takes_value: true
+  - file:
+      short: f
+      long: file
+      multiple: false
+      required: true
+      help: The file you want to perform search on
+      takes_value: true
