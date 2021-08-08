@@ -5,8 +5,8 @@
 - [Example](#example)
 # Introduction
 
-This is my take on [grep](https://man7.org/linux/man-pages/man1/grep.1.html).
-I wrote it in a way so that vscode [line navigation](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_navigate-to-a-specific-line) works for grep.
+This is my take on [grep].
+I wrote it in a way so that [vscode line navigation] works for grep.
 This is grep(without all its features) with one extra feature written in rust.
 
 # Installation
@@ -24,9 +24,12 @@ $ cargo install --path .
 - Then you can run it using:
 
 ```sh
-$ bad-grep "your query" "relative/full path to file"
+$ bad-grep -q "grep" -f ./README.md
 ```
 
 # Example
 
 ![example](./documentation/bad-grep-example.png)
+
+[grep]: https://man7.org/linux/man-pages/man1/grep.1.html
+[vscode line navigation]: https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_navigate-to-a-specific-line
